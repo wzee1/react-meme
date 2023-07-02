@@ -1,4 +1,5 @@
 {
+  "homepage": "https://wzee1.github.io/react-meme",
   "name": "project",
   "dependencies": {
     "react": "18.2.0",
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
